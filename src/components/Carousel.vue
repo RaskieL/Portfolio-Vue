@@ -101,6 +101,8 @@ export default {
 
 .prev:hover,
 .next:hover {
+    transition: 0.1s linear;
+    transform: scale(1.05) translateY(-95%);
     background-color: rgba(0, 0, 0, 0.5);
 }
 

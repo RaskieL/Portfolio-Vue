@@ -36,13 +36,14 @@ export default {
 .nav-logo img{
     margin-left: 1vw;
     border-radius: 100px;
-    padding: 0.2vw
+    padding: 0.2vw;
+    box-shadow: 0px 0px 20px #399fe1;
 }
 .nav-logo img:hover{
     cursor:grab;
     transition: 0.1s linear;
     transform:scale(1.25);
-    box-shadow: 0px 0px 15px #399fe1;
+    box-shadow: 0px 0px 30px #399fe1;
 }
 .nav-links{
     display: flex;
