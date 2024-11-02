@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <h2>Site réalisé par Maïken D'Angelo</h2>
-        <p><strong>Technologies utilisées:</strong> HTML, CSS, VueJs, TailwindCSS</p>
+        <p style="margin-bottom: 2vh;"><strong>Technologies utilisées:</strong> HTML, CSS, VueJs, TailwindCSS</p>
         <hr>
         <div class="link-columns">
             <div class="link-column">
@@ -40,6 +40,7 @@
     margin-right: auto;
     justify-content: center;
     gap: 25%;
+    margin-top: 3vh;
 
 }
 .link-column{

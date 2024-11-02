@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="slide-container">
+        <div class="slide-container shadow-inner">
             <div class="custom-slider fade" style="display: block;">
                 <img class="slide-img" alt="carousel1" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide1.jpg">
-                <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="slide-text">/!\ Site en chantier ! /!\</div>
             </div>
             <div class="custom-slider fade">
                 <img class="slide-img" alt="carousel2" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">

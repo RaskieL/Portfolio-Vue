@@ -1,15 +1,18 @@
 <template>
+  <div class="text-teal-100 bg-sky-950 aspect-auto font-mono text-base font-normal tracking-wide">
   <nav>
     <NavBar :routes="routes" @navigation="navigate"></NavBar>
   </nav>
   <router-view class="body" />
   <FooterComponent></FooterComponent>
+  </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
 import router from "@/router/index";
 import FooterComponent from "@/components/FooterComponent.vue";
+import { mapActions } from "vuex";
 
 export default {
   data: () => ({
@@ -20,11 +23,15 @@ export default {
     FooterComponent,
   },
   methods: {
+    ...mapActions(['getPortfolio']),
     navigate(path){
       if(path !== router.currentRoute){
         router.push(path);
       }
     }
+  },
+  mounted() {
+    this.getPortfolio();
   },
   watch: {
     $route: {
@@ -43,8 +50,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: rgba(20,20,20,0.1);
-  color: rgb(50,45,60);
 }
 .body{
   margin: 1cm;

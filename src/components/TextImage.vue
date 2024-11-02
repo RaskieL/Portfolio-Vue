@@ -3,7 +3,7 @@
         <div class="image">
             <img :src="require(`../assets/${imageSrc}`)" alt="ParagraphImg">
         </div>
-        <div class="text bg-slate-700">
+        <div class="text">
             <h3>{{ title }}</h3>
             <p>{{ paragraph1 }}</p>
             <p>{{ paragraph2 }}</p>
@@ -44,13 +44,16 @@
     flex-direction: row;
     gap: 3vw;
     text-align: left;
-    @apply bg-slate-500
+    margin-right: auto;
+    max-width: 50%;
 }
 .containerR{
     display: flex;
     flex-direction: row-reverse;
     gap: 3vw;
     text-align: right;
+    margin-left: auto;
+    max-width: 50%;
 }
 .text{
     display: flex;
